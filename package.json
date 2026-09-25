@@ -1,0 +1,57 @@
+{
+  "name": "shahadat-chat-bot",
+  "version": "3.0.0",
+  "description": "Made By SHAHADAT SAHU",
+  "main": "Main.js",
+  "engines": {
+    "node": "22.x",
+    "npm": ">=10.0.0 <13.0.0"
+  },
+  "scripts": {
+    "start": "node Sahu.js",
+    "login": "node login"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/shahadat-sahu/SHAHADAT-CHAT-BOT.git"
+  },
+  "keywords": [
+    "bot",
+    "facebook",
+    "shahadatproject",
+    "messenger",
+    "javascript",
+    "shadat",
+    "UhasSahu",
+    "shahadat sahu",
+    "shahadat chat bot"
+  ],
+  "author": "SHAHADAT SAHU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues"
+  },
+  "homepage": "https://gitlab.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues",
+  "dependencies": {
+    "@miraipr0ject/assets": "^1.0.9",
+    "axios": "^1.6.0",
+    "canvas": "^3.2.0",
+    "chalk": "^4.1.2",
+    "express": "^4.19.2",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.2.0",
+    "image-downloader": "^4.3.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "node-schedule": "^2.1.1",
+    "request": "^2.88.2",
+    "sahu-fca": "latest",
+    "sequelize": "^6.21.4",
+    "shaon-videos-downloader": "^1.0.1",
+    "sqlite3": "^5.1.7",
+    "string-similarity": "^4.0.4",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.2",
+    "youtube-search-api": "^2.0.1"
+  }
+}

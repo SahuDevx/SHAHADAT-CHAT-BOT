@@ -1,0 +1,139 @@
+If you want to move down the line, please use \n. e.g: tina\nSA HU.
+
+After changed, you have to restart the bot to use.
+
+Put the # character at the beginning of each sentence if you don't want the code to run those lines.
+Thanks to https://www.facebook.com/duong.than.net for translate to English!
+
+Main.js
+
+Main.newVersionDetected=𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 %1, 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐢𝐬 %2.
+Main.errorFormat=Malformed module!
+Main.nameExist=Module's name is similar to another module!
+Main.notFoundLanguage=Module %1 don't support your language
+Main.notFoundPackage=Can't find package %1 support for module %2, installing...
+Main.cantInstallPackage=Can't install package %1 for module %2, error: %3
+Main.loadedPackage=Installed whole package successfully for module %1
+Main.loadedConfig=Installed config successfully for module %1
+Main.cantLoadConfig=Can't install config of module %1, error: %2
+Main.cantOnload=Can't launch setup of module %1, error: %1
+Main.successLoadModule=Successfully installed module %1
+Main.failLoadModule=Can't install module %1, error: %2
+Main.finishLoadModule=Installed %1 module commands and %2 module events successfully
+Main.foundPathAppstate=Sahuhstate successfully
+Main.notFoundPathAppstate=Error can't find appstate file maybe file is malformed!
+Main.checkListGban=Checking global ban list...
+Main.banDevice=Your device have been banned from SA HU, please contact to facebook m.me/61575698041722 to know more information or asking for unban key, if you already have unban key, please fill it below.
+Main.keyNotSameFormat=Wrong format, code must contain 6 number.
+Main.codeInputExpired=Your code is wrong or out of date.
+Main.unbanDeviceSuccess=Your device are unban now, please restart to use.
+Main.userBanned=You had been banned from sahu when %1 with reason: %2. Please contact to facebook m.me/61575698041722 to have more information!
+Main.finishCheckListGban=Checked global ban list
+Main.handleListenError=handleListene has occurred some unexpected errorr, error : %1
+Main.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
+Main.refreshListen=Refreshed handleListener...
+Main.successConnectDatabase=Connected to database successfully!
+Main.failConnectDatabase=Failed to connect to database, error: %1
+
+Shahadat specific texts
+
+shahadat.foundPathAppstate=Found appstate.json path successfully
+shahadat.notFoundPathAppstate=Appstate.json not found or invalid!
+shahadat.errorFormat=Invalid module format detected!
+shahadat.nameExist=Module name already exists in the system!
+shahadat.notFoundLanguage=No language support found for module: %1
+shahadat.notFoundPackage=Required package %1 not found for module %2, installing now...
+shahadat.cantInstallPackage=Failed to install package %1 for module %2. Error: %3
+shahadat.loadedPackage=All dependencies loaded successfully for module %1
+shahadat.loadedConfig=Configuration loaded successfully for module %1
+shahadat.cantOnload=Failed to initialize module %1. Error: %2
+shahadat.successLoadModule=Module %1 loaded successfully
+shahadat.failLoadModule=Failed to load module %1. Error: %2
+shahadat.finishLoadModule=Successfully loaded %1 commands and %2 events
+shahadat.handleListenError=Listener encountered an error: %1
+shahadat.warningSourceCode=WARNING: Source code structure modified unexpectedly!
+shahadat.successConnectDatabase=Database connection established successfully
+
+includes/listen.js
+
+listen.startLoadEnvironment=Proceed to load the environment variable ...
+listen.loadedEnvironmentThread=Loaded thread environment variable successfully
+listen.loadedEnvironmentUser=Loaded user environment variable successfully
+listen.successLoadEnvironment=Loaded environment variable successfully
+listen.failLoadEnvironment=Can't load environment variable, error: %1
+
+includes/controller/currencies.js
+
+currencies.needObjectOrArray=Have to be an Array or an Object or maybe both
+currencies.needObject=Have to be an Object
+currencies.needNumber= Have to be an number
+
+includes/controller/threads.js
+
+threads.needObjectOrArray=Have to be an Array or an Object or maybe both
+threads.needObject=Have to be an Object
+
+includes/controller/users.js
+
+users.needObjectOrArray=Have to be an Array or an Object or maybe both
+users.needObject=Have to be an Object
+
+includes/handle/handleCommand.js
+
+handleCommand.userBanned=বক্স এ বেশি আবলামি করার কারণে তুমাকে ব্যান করা হয়েছে..!🚫
+handleCommand.threadBanned=Group Has Been Banned..!⛔️\nPlease Contact Owner SHAHADAT SAHU For Unban ⚠️
+handleCommand.commandNotExist=Assalamu Alaikum 🌸\n\nOops! The command you entered isn't valid ⚠️ \n\nDid you mean ➤ %1 ?\n\nPlease check and try again 🌺
+handleCommand.commandNotExistName=Assalamu Alaikum 🌸\n\n"%1" namer kono command nei ⚠️\n\nUse %2help to see every command 🌺
+handleCommand.commandThreadBanned=Your thread is unable to use command "%1"
+handleCommand.commandUserBanned=You are unable to use command "%1"
+handleCommand.threadNotAllowNSFW=This Commnd Only use Andmin
+handleCommand.cantGetInfoThread=Can't get your thread's info, error: %1
+handleCommand.permssionNotEnough="%1 You Have No Permission! 🚫\nThis Command is Only For Boss Shahadat 😘\n\nছাগল! এই কমান্ডটা তোর জন্য না!\n👑 এইটা শুধুমাত্র আমার বস SHAHADAT SAHU ব্যবহার করতে পারবে!\nতুই এডমিন লেভেলে নাই বুঝলি? 😂
+handleCommand.cantSetMessageReaction=Having some unexpected error at setMessageReaction, error: %1
+handleCommand.executeCommand=[ %1 ] Command used: %2 by user: %3 at thread: %4 | Args included: %5 | Processing time: %6ms
+handleCommand.commandError=Having some unexpected error when using command %1, error: %2
+
+includes/handle/handleCommandEvent.js
+
+handleCommandEvent.moduleError=Having some unexpected error when using command %1, error: %2
+
+includes/handle/handleCreateDatabase.js
+
+handleCreateDatabase.newThread=new thread: %1
+handleCreateDatabase.newUser=new user %1
+
+includes/handle/handleEvent.js
+
+handleEvent.executeEvent=[ %1 ] Event was executed: %2 at thread: %3 | Processing time: %4ms
+handleEvent.eventError=Having some error when executing event %1, error: %12
+
+includes/handle/handleReaction.js
+
+handleReaction.missingValue=Missing value to respond your problem
+handleReaction.executeError=Having some error when responding to your problem, error: %1
+
+includes/handle/handleReply.js
+
+handleReply.missingValue=Missing value to respond your problem
+handleReply.executeError=Having some error when responding your problem, error: %1
+
+includes/handle/handleSchedule.js
+
+handleSchedule.exectuteError=Having some error when schedule at module %1, error: %2
+
+utils/index.js
+
+utils.throwError=ℹ️ [!] ɪғ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ɴᴏᴛ �ᴏʀᴋɪɴɢ, ᴘʟᴇᴀsᴇ ᴜsᴇ ᴀɴᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ. %1help %2 ᴜsᴇ ғᴏʀ ᴍᴏʀᴇ ᴜsᴀɢᴇ💙🥺
+
+updater.js
+
+updater.latestVersion=You are using the latest version
+updater.cantFindVersion=You are using an undefined version (%1), please check your package.json file again
+updater.newVersions=There are %1 new versions to update, starting to update...
+updater.updateSuccess=Update successfully%1
+updater.configChanged=The %1 has been changed, please check your config.json file again
+updater.installingPackages=Installing dependencies for bot...
+updater.installSuccess=Installed dependencies successfully, restart the bot to use the new version
+updater.backupSuccess=Successfully backed up changed files, see in the %1 folder
+updater.restartToApply=. Restart the bot to apply the new version
+updater.skipFile=There is a new version of the %1 file, but you have skipped this file during the update process with the comment %2 in this file
