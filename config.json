@@ -1,0 +1,61 @@
+{
+  "Author": "SHAHADAT SAHU",
+  "version": "3.0.0",
+  "language": "en",
+  "adminOnly": false,
+  "autoSent": true,
+  "allowInbox": true,
+  "DeveloperMode": false,
+  "autoCreateDB": true,
+  "autoClean": true,
+  "notiGroup": true,
+  "NOTIFICATION": true,
+  "EMAIL": "Facebook number/ID",
+  "PASSWORD": "Facebook password",
+  "OTPKEY": "Facebook 2FA Secret Key",
+  "BOTNAME": "𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓",
+  "PREFIX": ".",
+  "usePrefix": false,
+  "reactUnsend": [
+    "😡",
+    "🤧",
+    "😤",
+    "😠"
+  ],
+  "ADMINBOT": [
+    "100044713412032",
+    "100004225532317",
+    "100044713412032"
+  ],
+  "DEVELOPER": [
+    "100044713412032"
+  ],
+  "APPSTATEPATH": "appstate.json",
+  "FCAOption": {
+    "selfListen": false,
+    "listenEvents": true,
+    "autoReconnect": true,
+    "online": true,
+    "autoMarkDelivery": false,
+    "autoMarkRead": false,
+    "enableTypingIndicator": true,
+    "typingDuration": 100
+  },
+  "Login": {
+    "autoRetryLogin": true,
+    "maxLoginRetries": 100,
+    "reconnectOnListenError": true,
+    "maxReconnectAttempts": 100,
+    "reconnectBaseDelay": 3000,
+    "reconnectMaxDelay": 30000,
+    "persistAppState": true,
+    "backupAppState": true
+  },
+  "DATABASE": {
+    "sqlite": {
+      "storage": "data.sqlite"
+    }
+  },
+  "commandDisabled": [],
+  "eventDisabled": []
+}
