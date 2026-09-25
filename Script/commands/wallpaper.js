@@ -19,7 +19,11 @@ module.exports.run = async ({ api, event, args }) => {
     return;
   }
 
-  const apiKey = "39178311-acadeb32d7e369897e41dba06";
+  const apiKey = process.env.PIXABAY_API_KEY;
+  if (!apiKey) {
+    api.sendMessage("PIXABAY_API_KEY কনফিগার করা হয়নি. অ্যাডমিনকে জানান.⚠️", event.threadID, event.messageID);
+    return;
+  }
   const query = encodeURIComponent(args.join(" "));
   const apiUrl = `https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&per_page=200`;
 
