@@ -14,7 +14,7 @@
   "PASSWORD": "Facebook password",
   "OTPKEY": "Facebook 2FA Secret Key",
   "BOTNAME": "𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐂𝐇𝐀𝐓 𝐁𝐎𝐓",
-  "PREFIX": ".",
+  "PREFIX": "/",
   "usePrefix": false,
   "reactUnsend": [
     "😡",
